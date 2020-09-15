@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Image\dossier.png" />
+    <None Remove="Image\file.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\dossier.png" />
+    <Resource Include="Image\file.png" />
   </ItemGroup>
 
 </Project>

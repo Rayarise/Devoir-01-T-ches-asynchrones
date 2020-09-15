@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileScanner"
         mc:Ignorable="d"
-        Title="File Scanner" Height="450" Width="800">
+        Title="File Scanner" Height="450" Width="800"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}" >
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
@@ -22,7 +23,27 @@
             <TextBlock Text="{Binding SelectedFolder}"/>
         </StatusBar>
         <Grid>
-            <ListView ItemsSource="{Binding FolderItems}"/>
+            
+
+            <ListView ItemsSource="{Binding ItemsF}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                        <StackPanel Orientation="Horizontal">
+                            
+                            <Image Height="20" Width="20" Source="{Binding Image}"/>
+                          
+                            <TextBlock Text="{Binding FolderItems}" />
+                        </StackPanel>
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            
+            </ListView>
+
+          
         </Grid>
     </DockPanel>
+        
 </Window>

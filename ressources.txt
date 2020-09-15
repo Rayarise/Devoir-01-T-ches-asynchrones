@@ -1,0 +1,6 @@
+
+Programmation asyncrone
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/using-async-for-file-access
+
+Programmation asyncrone
+https://www.youtube.com/watch?v=2moh18sh5p4&t=1261s
